@@ -20,24 +20,16 @@ else
 PREFIX=/mingw32
 fi
 
-if [[ $2 == '' ]]; then
-echo "Please specify mpv source directory."
-exit
-else
-baka_src="$2"
-fi
+# get baka-mplayer
+git clone https://github.com/u8sand/Baka-MPlayer.git Baka-MPlayer.$arch
+cd Baka-MPlayer.$arch
+git pull
 
-if [[ $3 != '' ]]; then
-JOBS="$3"
-else
-JOBS=-j`grep -c ^processor /proc/cpuinfo`
-fi
+# build baka-mplayer
 
-#pacman -S mingw-w64-$arch-ffmpeg mingw-w64-i686-libass \
-#mingw-w64-i686-libbluray mingw-w64-$arch-qt5 --needed
-
-# build baka
-pushd "$baka_src"
-
-QMAKE=$PREFIX/bin/qmake ./configure CONFIG+=embed_translations lupdate=$PREFIX/bin/lupdate lrelease=$PREFIX/bin/lrelease
-make $JOBS
+QMAKE=$PREFIX/bin/qmake \
+./configure \
+CONFIG+=embed_translations \ 
+lupdate=$PREFIX/bin/lupdate \
+lrelease=$PREFIX/bin/lrelease
+make -j `grep -c ^processor /proc/cpuinfo`
