@@ -68,6 +68,8 @@ And then build these packages a static version by editing their PKGBUILDS.
 
 Most packages can build a static version by adding ```--enable-static``` or ```--enable-static --disable-static``` to the configure parameter, for some packages using cmake you have to add ```DLIBTYPE=STATIC```.
 
+Note that xvidcore is built as xvidcore.a, you have to ```ln -s /mingw64/lib/xvidcore.a /mingw64/lib/libxvidcore.a``` to let it be recognized by ld.
+
 I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me.
 ---------------------------------------------------------------------------------------------------------------------------
 Install Qt5-static
