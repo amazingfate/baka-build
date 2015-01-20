@@ -30,12 +30,12 @@ DEST_OS=win32 TARGET=$arch-w64-mingw32 PKG_CONFIG=/usr/bin/pkg-config \
 CC=gcc PERL=$PREFIX/bin/perl AR=$PREFIX/bin/ar \ 
 WINDRES=$PREFIX/bin/windres \
 python3.3 waf configure --check-c-compiler=gcc --prefix=$PREFIX \
---enable-libmpv-shared --disable-client-api-examples
+--enable-libmpv-static --disable-client-api-examples --enable-static-build
 python3.3 waf build $JOBS
 python3.3 waf install
 
 instroot=$PREFIX
-mv $instroot/bin/libmpv.dll.a $instroot/lib
+mv $instroot/bin/libmpv.a $instroot/lib
 mv $instroot/bin/pkgconfig/mpv.pc $instroot/lib/pkgconfig
 sed -i 's_/instroot/bin_/$instroot/lib_' $instroot/lib/pkgconfig/mpv.pc
 rmdir $instroot/bin/pkgconfig
