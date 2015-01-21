@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Build script for bakamplayer for native msys2/mingw-w64 by FrankHB.
-# based on official scripts.
-# Usage: ./baka-mplayer.sh $arch /e/Source/baka-mplayer
-# The 3rd argument is optional, using number of CPU cores if not preset.
-
 if [[ $1 == 'x86_64' ]]; then
 arch=x86_64
 elif [[ $1 == 'i686' ]]; then
