@@ -26,7 +26,7 @@ git pull
 python3.3 bootstrap.py
 DEST_OS=win32 TARGET=$arch-w64-mingw32 PKG_CONFIG=/usr/bin/pkg-config CC=gcc PERL=$PREFIX/bin/perl AR=$PREFIX/bin/ar WINDRES=$PREFIX/bin/windres \
 python3.3 waf configure --check-c-compiler=gcc --prefix=$PREFIX \
---enable-libmpv-static --disable-client-api-examples --enable-static-build
+--enable-libmpv-static --disable-client-api-examples
 python3.3 waf build $JOBS
 python3.3 waf install
 
