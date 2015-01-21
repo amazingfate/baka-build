@@ -47,12 +47,15 @@ arch=x86_64
 If everything succeeded without error, baka-mplayer.exe will be built under Baka-MPlayer.x86_64/build/
 Static Build
 ============
-The scripts above are about dynamic building. If you want to build it staticly, you have to build a static version of mpv.
+If you want to build it staticly, you have to build a static version of mpv.
+NOTE
+----
+This method can not build successfully, it is just what I've tried to build and I haven't succeeded yet.
 Build Static Deps of Mpv
 ------------------------
 First install the deps of building mpv:
 ```
-pacman -S git pkg-config python3 mingw-w64-x86_64-gcc mingw-w64-x86_64-ffmpeg mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-lua mingw-w64-x86_64-libdvdnav mingw-w64-x86_64-mpg123 mingw-w64-x86_64-libguess
+pacman -S git pkg-config python3 mingw-w64-x86_64-gcc gcc mingw-w64-x86_64-ffmpeg mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-lua mingw-w64-x86_64-libdvdnav mingw-w64-x86_64-mpg123 mingw-w64-x86_64-libguess
 ```
 And run:
 ```
@@ -67,8 +70,12 @@ Most packages can build a static version by adding ```--enable-static``` or ```-
 
 Note that xvidcore is built as xvidcore.a, you have to ```ln -s /mingw64/lib/xvidcore.a /mingw64/lib/libxvidcore.a``` to let it be recognized by ld.
 
-I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me.
----------------------------------------------------------------------------------------------------------------------------
+There is something wrong with libbluray and libxml2, so I add ```disable-libbluray``` to the build configure parameter. 
+
+Static Libguess
+---------------
+I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me. If you have to add ```diable-libguess``` to configure or just remove the package ```mingw-w64-x86_64```. 
+
 Install Qt5-static
 ------------------
 ```
@@ -80,6 +87,9 @@ Build Baka-MPlayer
 arch=x86_64
 ./bakamplayer-static.sh $arch
 ```
+I failed to build with log: http://paste.ubuntu.com/9804052/
+Hope anyone could get this job done.
+
 
 
 
