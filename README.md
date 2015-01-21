@@ -70,6 +70,8 @@ Most packages can build a static version by adding ```--enable-static``` or ```-
 
 Note that xvidcore is built as xvidcore.a, you have to ```ln -s /mingw64/lib/xvidcore.a /mingw64/lib/libxvidcore.a``` to let it be recognized by ld.
 
+Libbluray
+---------
 There is something wrong with libbluray and libxml2, so I add ```disable-libbluray``` to the build configure parameter. 
 
 Static Libguess
