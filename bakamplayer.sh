@@ -32,4 +32,4 @@ QMAKE=$PREFIX/bin/qmake \
 CONFIG+=embed_translations \ 
 lupdate=$PREFIX/bin/lupdate \
 lrelease=$PREFIX/bin/lrelease
-make -j `grep -c ^processor /proc/cpuinfo`
+mingw32-make -j `grep -c ^processor /proc/cpuinfo`
