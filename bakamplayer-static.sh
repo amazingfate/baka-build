@@ -21,8 +21,8 @@ PREFIX=/mingw32
 fi
 
 # get baka-mplayer
-git clone https://github.com/u8sand/Baka-MPlayer.git Baka-MPlayer.$arch
-cd Baka-MPlayer.$arch
+git clone https://github.com/u8sand/Baka-MPlayer.git Baka-MPlayer_static.$arch
+cd Baka-MPlayer_static.$arch
 git pull
 
 # build baka-mplayer
