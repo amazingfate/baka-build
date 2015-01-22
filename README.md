@@ -101,7 +101,7 @@ Name: mpv
 Description: mpv media player client library
 Version: 1.13.0
 Requires:
-Libs: -L${libdir} -lmpv -lass -llua -ldvdcss -lavcodec -ldvdnav -lmpg123 -lcaca -lxml2 -lfontconfig -lfreetype -lavdevice -lavfilter -lavformat -lavresample -lavutil -lenca -lm -lfribidi -lglib-2.0 -lintl -lxml2 -lbz2 -ldvdread -ldvdcss -lmingw32 -lSDLmain -lSDL -liconv -lswscale -lswresample -llcms2 -lz -lharfbuzz -lexpat -lgnutls
+Libs: -L${libdir} -lmpv -lass -llua -ldvdcss -lavcodec -ldvdnav -lmpg123 -lcaca -lxml2 -lfontconfig -lfreetype -lavdevice -lavfilter -lavformat -lavresample -lavutil -lenca -lm -lfribidi -lglib-2.0 -lintl -lxml2 -lbz2 -ldvdread -ldvdcss -lmingw32 -lSDLmain -lSDL -liconv -lswscale -lswresample -llcms2 -lz -lharfbuzz -lexpat -lgnutls -lbluray -lxml2
 Libs.private: -lenca -lgdi32 -lopengl32 -liconv -ljpeg -lm -lole32 -luuid -lole32 -lwinmm -lz 
 Cflags: -I${includedir}
 ```
