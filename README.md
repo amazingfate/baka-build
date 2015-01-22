@@ -50,7 +50,7 @@ Static Build
 If you want to build it staticly, you have to build a static version of mpv.
 NOTE
 ----
-This is not recommanded because I can't build it with dxva2 support, although the size will be smaller.
+This is not recommanded because I can't build it with dxva2 and libbluray support, although the size will be smaller.
 Build Static Deps of Mpv
 ------------------------
 First install the deps of building mpv:
