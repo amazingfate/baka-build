@@ -72,11 +72,11 @@ Note that xvidcore is built as xvidcore.a, you have to ```ln -s /mingw64/lib/xvi
 
 Libbluray
 ---------
-There is something wrong with libbluray and libxml2, so I add ```disable-libbluray``` to the build configure parameter. 
+There is something wrong with libbluray and libxml2, edit the libbluray.pc with: ```Libs: -L${libdir} -lbluray -lxml2```.
 
 Static Libguess
 ---------------
-I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me. If you have to add ```diable-libguess``` to configure or just remove the package ```mingw-w64-x86_64```. 
+I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me. You have to add ```diable-libguess``` to configure or just remove the package ```mingw-w64-x86_64```. 
 
 Install Qt5-static
 ------------------
