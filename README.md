@@ -72,7 +72,7 @@ Note that xvidcore is built as xvidcore.a, you have to ```ln -s /mingw64/lib/xvi
 
 Libbluray
 ---------
-There is something wrong with libbluray and libxml2, edit the libbluray.pc with: ```Libs: -L${libdir} -lbluray -lxml2```.
+There is something wrong with libbluray and libxml2, so we have to disable it
 
 Static Libguess
 ---------------
