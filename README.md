@@ -50,7 +50,7 @@ Static Build
 If you want to build it staticly, you have to build a static version of mpv.
 NOTE
 ----
-This method can not build successfully, it is just what I've tried to build and I haven't succeeded yet.
+This is not recommanded because I can't build it with dxva2 support, although the size will be smaller.
 Build Static Deps of Mpv
 ------------------------
 First install the deps of building mpv:
@@ -90,7 +90,22 @@ arch=x86_64
 ./bakamplayer-static.sh $arch
 ```
 I failed to build with log: http://paste.ubuntu.com/9804052/
-Hope anyone could get this job done.
+To solve this, you have to edit the file ```mpv.pc``` in ```/mingw64/lib/pkgconfig``` like this:
+```
+prefix=/mingw64
+exec_prefix=/mingw64
+libdir=/mingw64/bin
+includedir=/mingw64/include
+
+Name: mpv
+Description: mpv media player client library
+Version: 1.13.0
+Requires:
+Libs: -L${libdir} -lmpv -lass -llua -ldvdcss -lavcodec -ldvdnav -lmpg123 -lcaca -lxml2 -lfontconfig -lfreetype -lavdevice -lavfilter -lavformat -lavresample -lavutil -lenca -lm -lfribidi -lglib-2.0 -lintl -lxml2 -lbz2 -ldvdread -ldvdcss -lmingw32 -lSDLmain -lSDL -liconv -lswscale -lswresample -llcms2 -lz -lharfbuzz -lexpat -lgnutls
+Libs.private: -lenca -lgdi32 -lopengl32 -liconv -ljpeg -lm -lole32 -luuid -lole32 -lwinmm -lz 
+Cflags: -I${includedir}
+```
+
 
 
 
