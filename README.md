@@ -86,7 +86,7 @@ pacman -S mingw-w64-x86_64-qt5-static
 Installing Build Dependences
 ----------------------------
 ```
-pacman -S pacman -S  mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libzip
+pacman -S mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libzip
 ```
 Build Baka-MPlayer
 ------------------
