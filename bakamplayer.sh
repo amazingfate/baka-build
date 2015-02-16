@@ -47,6 +47,7 @@ cp /mingw64/bin/avcodec-56.dll \
 /mingw64/bin/libdvdcss-2.dll \
 /mingw64/bin/libdvdnav-4.dll \
 /mingw64/bin/libdvdread-4.dll \
+/mingw64/bin/libeay32.dll \
 /mingw64/bin/libenca-0.dll \
 /mingw64/bin/libexpat-1.dll \
 /mingw64/bin/libffi-6.dll \
@@ -107,6 +108,7 @@ cp /mingw64/bin/avcodec-56.dll \
 /mingw64/bin/OpenAL32.dll \
 /mingw64/bin/postproc-53.dll \
 /mingw64/bin/SDL.dll \
+/mingw64/bin/ssleay32.dll \
 /mingw64/bin/swresample-1.dll \
 /mingw64/bin/swscale-3.dll \
 /mingw64/bin/xvidcore.dll \
