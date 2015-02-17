@@ -76,7 +76,7 @@ There is something wrong with libbluray and libxml2, so we have to disable it
 
 Static Libguess
 ---------------
-I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me. You have to add ```diable-libguess``` to configure or just remove the package ```mingw-w64-x86_64```. 
+I have not built a static mpv successfully because I can't build a static version of libguess. Anyone knows please tell me. You have to add ```disable-libguess``` to configure or just remove the package ```mingw-w64-x86_64```. 
 
 Install Qt5-static
 ------------------
