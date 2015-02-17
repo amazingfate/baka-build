@@ -139,3 +139,5 @@ cp /mingw64/share/qt5/plugins/bearer/qgenericbearer.dll \
 /mingw64/share/qt5/plugins/bearer/qnativewifibearer.dll Baka-MPlayer_$arch/bearer
 cp /mingw64/share/qt5/plugins/iconengines/qsvgicon.dll Baka-MPlayer_$arch/iconengines
 cp /mingw64/share/qt5/plugins/platforms/qwindows.dll Baka-MPlayer_$arch/platforms
+mkdir Baka-MPlayer_$arch/etc
+cp -r /mingw64/etc/fonts Baka-MPlayer_$arch/etc
