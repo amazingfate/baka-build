@@ -35,7 +35,7 @@ pacman -Su
 Installing Build Dependences
 ----------------------
 ```
-pacman -S  git mingw-w64-x86_64-make base-devel mingw-w64-x86_64-qt5 mingw-w64-x86_64-pkg-config mingw-w64-x86_64-mpv mingw-w64-x86_64-libzip
+pacman -S  git mingw-w64-x86_64-gcc mingw-w64-x86_64-binutils mingw-w64-x86_64-make base-devel mingw-w64-x86_64-qt5 mingw-w64-x86_64-pkg-config mingw-w64-x86_64-mpv mingw-w64-x86_64-libzip
 ```
 The time of this process depends on the speed of your internet because qt5 is a large package.
 Start Building
