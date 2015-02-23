@@ -141,3 +141,6 @@ cp /mingw64/share/qt5/plugins/iconengines/qsvgicon.dll Baka-MPlayer_$arch/iconen
 cp /mingw64/share/qt5/plugins/platforms/qwindows.dll Baka-MPlayer_$arch/platforms
 mkdir Baka-MPlayer_$arch/etc
 cp -r /mingw64/etc/fonts Baka-MPlayer_$arch/etc
+cp ../mpv/fonts.conf Baka-MPlayer_$arch/etc/fonts
+cp -r ../font Baka-MPlayer_$arch
+cp -r ../mpv Baka-MPlayer_$arch
