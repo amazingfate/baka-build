@@ -42,6 +42,7 @@ $PREFIX/bin/avformat-56.dll \
 $PREFIX/bin/avresample-2.dll \
 $PREFIX/bin/avutil-54.dll \
 $PREFIX/bin/libass-5.dll \
+$PREFIX/bin/libarchive-13.dll \
 $PREFIX/bin/libbluray-1.dll \
 $PREFIX/bin/libbz2-1.dll \
 $PREFIX/bin/libcaca-0.dll \
@@ -100,6 +101,7 @@ $PREFIX/bin/libtasn1-6.dll \
 $PREFIX/bin/libtheoradec-1.dll \
 $PREFIX/bin/libtheoraenc-1.dll \
 $PREFIX/bin/libtiff-5.dll \
+$PREFIX/bin/libuchardet.dll \
 $PREFIX/bin/libvorbis-0.dll \
 $PREFIX/bin/libvorbisenc-2.dll \
 $PREFIX/bin/libvpx-1.dll \
@@ -125,6 +127,8 @@ $PREFIX/bin/Qt5Gui.dll \
 $PREFIX/bin/Qt5Network.dll \
 $PREFIX/bin/Qt5Svg.dll \
 $PREFIX/bin/Qt5Widgets.dll \
+$PREFIX/bin/liblzo2-2.dll \
+$PREFIX/bin/libdcadec-0.dll \
 $PREFIX/bin/Qt5WinExtras.dll Baka-MPlayer_$arch
 mkdir Baka-MPlayer_$arch/bearer
 mkdir Baka-MPlayer_$arch/iconengines
