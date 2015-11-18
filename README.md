@@ -45,6 +45,7 @@ arch=x86_64
 ./bakamplayer.sh $arch
 ```
 If everything succeeded without error, baka-mplayer.exe will be built under Baka-MPlayer.x86_64/build/, and you can find baka-mplayer.exe with full dlls in directory Baka-MPlayer.x86_64/Baka-MPlayer_x86_64
+
 Static Build
 ============
 If you want to build it staticly, you have to build a static version of mpv.
