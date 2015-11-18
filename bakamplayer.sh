@@ -67,9 +67,9 @@ $PREFIX/bin/libguess.dll \
 $PREFIX/bin/libharfbuzz-0.dll \
 $PREFIX/bin/libhogweed-4-1.dll \
 $PREFIX/bin/libiconv-2.dll \
-$PREFIX/bin/libicudt55.dll \
-$PREFIX/bin/libicuin55.dll \
-$PREFIX/bin/libicuuc55.dll \
+$PREFIX/bin/libicudt56.dll \
+$PREFIX/bin/libicuin56.dll \
+$PREFIX/bin/libicuuc56.dll \
 $PREFIX/bin/libidn-11.dll \
 $PREFIX/bin/libintl-8.dll \
 $PREFIX/bin/libjasper-1.dll \
@@ -114,7 +114,7 @@ $PREFIX/bin/libxml2-2.dll \
 $PREFIX/bin/libzip-4.dll \
 $PREFIX/bin/lua51.dll \
 $PREFIX/bin/mpv-1.dll \
-$PREFIX/bin/OpenAL32.dll \
+$PREFIX/bin/libopenal-1.dll \
 $PREFIX/bin/postproc-53.dll \
 $PREFIX/bin/SDL.dll \
 $PREFIX/bin/ssleay32.dll \
